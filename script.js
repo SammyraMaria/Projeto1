@@ -8,9 +8,9 @@ function toggleMode() {
   // Substitui a imagem dependendo do modo (claro ou escuro)
   if (html.classList.contains("light")) {
     // Se o modo 'light' estiver ativado (tema claro), altera a imagem para 'avatar-light.png'
-    img.setAttribute("src", "/assets/avatar-light.png");
+    img.setAttribute("src", "assets/avatar-light.png");
   } else {
     // Caso contrário (modo escuro), mantém a imagem padrão 'avatar.png'
-    img.setAttribute("src", "/assets/avatar.png");
+    img.setAttribute("src", "assets/avatar.png");
   }
 }
