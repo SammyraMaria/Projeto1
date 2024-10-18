@@ -7,7 +7,7 @@
 :root {
   /* Variáveis de cor e imagem para facilitar a troca de tema */
   --text-color: white; /* Cor do texto */
-  --bg-url: url(/assets/bg-desktop.jpg); /* Imagem de fundo padrão */
+  --bg-url: url(assets/bg-desktop.jpg); /* Imagem de fundo padrão */
   --stroke-color: rgba(201, 117, 117, 0.507); /* Cor de borda com opacidade */
   --surface-color: rgba(128, 128, 128, 0.247); /* Cor de fundo de elementos */
   --surface-color-hover: rgba(
@@ -22,12 +22,12 @@
     255,
     0.493
   ); /* Cor de destaque para ícones e links */
-  --switch-bg-url: url(/assets/moon_stars.svg); /* Ícone do modo noturno */
+  --switch-bg-url: url(assets/moon_stars.svg); /* Ícone do modo noturno */
 }
 .light {
   /* Variáveis para o tema claro */
   --text-color: black;
-  --bg-url: url(/assets/bg-desktop-light.jpg); /* Imagem de fundo para o modo claro */
+  --bg-url: url(assets/bg-desktop-light.jpg); /* Imagem de fundo para o modo claro */
   --stroke-color: rgba(255, 255, 255, 0.522);
   --surface-color: rgba(243, 169, 203, 0.657);
   --surface-color-hover: rgba(244, 244, 249, 0.399);
