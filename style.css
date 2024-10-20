@@ -10,18 +10,9 @@
   --bg-url: url(assets/bg-desktop.jpg); /* Imagem de fundo padrão */
   --stroke-color: rgba(201, 117, 117, 0.507); /* Cor de borda com opacidade */
   --surface-color: rgba(128, 128, 128, 0.247); /* Cor de fundo de elementos */
-  --surface-color-hover: rgba(
-    250,
-    163,
-    228,
-    0.08
+  --surface-color-hover: rgba(250, 163, 228, 0.08
   ); /* Cor de fundo ao passar o mouse */
-  --highlight-color: rgba(
-    210,
-    96,
-    255,
-    0.493
-  ); /* Cor de destaque para ícones e links */
+  --highlight-color: rgba(210, 96, 255, 0.493); /* Cor de destaque para ícones e links */
   --switch-bg-url: url(assets/moon_stars.svg); /* Ícone do modo noturno */
 }
 .light {
@@ -88,11 +79,15 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+  animation: slide-back 0.2s
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+   animation: slide-in 0.2s forwards;
+}
+
+#switch button:hover{
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -169,5 +164,23 @@ footer {
   }
   .light{
     --bg-url: url(assets/bg-desktop-light.jpg);
+  }
+}
+
+/* animation*/
+@keyframes slide-in {
+  from{
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes slide-back {
+  from{
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
